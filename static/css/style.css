@@ -1,7 +1,4 @@
 /* -------------Header-------------------- */
-body{
-    height: 1500vh;
-}
 .header-area {
     background-color: var(--header-color);
     width: 100%;
@@ -249,13 +246,13 @@ body{
     text-align: center;
 }
 
-.title_product {
+.title_content {
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-.title_sp {
+.title_sp_content {
     color: #5a5a5a
 }
 
@@ -310,7 +307,10 @@ body{
 .product_link {
     font-size: 20px;
     color: black;
-    
+}
+
+.product_link:hover {
+    color: var(--input-slider);
 }
 .product_price {
     margin: 10px 0px;
@@ -350,4 +350,209 @@ body{
 
 .feature_img {
     width: 65px;
+}
+
+
+/* -------------Blog Area----------------- */
+
+.blog_area {
+    margin-top: 50px;
+}
+
+.blog_content {
+    margin-top: 50px;
+    width: 90%;
+
+}
+
+.blog_wrap {
+    padding: 10px;
+    width: 30%;
+    height: 100%;
+    border: 1px solid rgb(213, 213, 213);
+
+}
+
+.blog_link {
+    overflow: hidden;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.blog_wrap:hover .blog_img {
+    transform: scale(1.1);
+}
+
+.blog_img {
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.blog_wrap_content {
+    margin: 20px;
+    text-align: center;
+}
+
+.blog_list_title {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+
+}
+
+.blog_list_title:hover {
+    color: var(--input-slider);
+}
+
+.blog_comment {
+    position: relative;
+    margin-top: 20px;
+    padding: 20px 0px;
+}
+
+.blog_comment::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(213, 213, 213);
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 0;
+}
+
+.blog_comment_item {
+    position: relative;
+    font-size: 13px;
+    color: #a8a8a8;
+    padding: 0px 15px;
+}
+
+.blog_comment_item:hover {
+    color: var(--input-slider);
+}
+
+.comment_item::before {
+    content: "\5C";
+    position: absolute;
+    font-size: 20px;
+    height: 10px;
+    right: 0;
+}
+
+.blog_describe {
+    font-size: 15px;
+    color: #7e7d7d;
+    margin-bottom: 30px;
+}
+.blog_btn {
+    height: 50px;
+}
+
+.readmore {
+    border: 1px solid #eee;
+    color: black;
+    padding: 20px 50px;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.readmore:hover{
+    color: white;
+    background-color: var(--input-slider);
+}
+
+/* --------------Footer---------------------- */
+.footer_section {
+    background-image: url(//cdn.shopify.com/s/files/1/1288/2297/files/bg_shape_6.jpg?v=1646296755);
+    margin-top: 100px;
+
+}
+
+.container_footer {
+    width: 100%;
+    margin: 100px;
+}
+
+.footer_top_contact {
+    color: white;
+    font-size: 20px;
+}
+
+.footer_top_contact i {
+    margin: 0px 10px;
+}
+
+.fa-brands {
+    margin: 10px;
+}
+
+.footer_content {
+    margin-top: 50px;
+}
+
+.footer_widget {
+    width: 23%;
+
+}
+
+.footer_help {
+   width: 80%;
+
+}
+
+.footer_title {
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+.social_widget {
+    margin: 30px 0px;
+}
+.social_widget_info {
+    margin: 9px 0px;
+}
+
+.footer_icon_item {
+    position: relative;
+    margin-top: 20px;
+}
+
+.footer_help_icon:hover{
+    color: black !important;
+}
+
+.footer_help_icon {
+    color: white;
+}
+
+.footer_help_icon i {
+    margin-right: 10px;
+    transform: translateY(-10%);
+}
+
+.footer_input {
+    border: 1px solid white;
+    border-radius: 10px;
+    outline: none;
+    background-color: unset;
+    padding-left: 20px;
+    height: 40px;
+    width: 200px;
+}
+
+.footer_input::placeholder{
+    color: white;
+}
+
+.footer_btn {
+    position: absolute;
+    border-radius: 10%;
+    border: white;
+    height: 100%;
+    width: 70px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
 }

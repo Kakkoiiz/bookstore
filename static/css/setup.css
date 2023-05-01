@@ -7,6 +7,10 @@
     --input-slider: rgb(255,97,98);
 }
 
+body {
+    font-family: Work Sans,sans-serif;
+}
+
 .noon {
     height: 40px;
 }
