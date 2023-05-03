@@ -1,16 +1,28 @@
-var btnShowSearch = document.getElementById('btn_show_search')
-var topSearch = document.getElementById('header_top_search')
+const avatarUpload = document.querySelector('#avatar-upload');
+const avatarPreview = document.querySelector('#avatar-preview');
+var addBook = document.getElementById('addBook')
+var showAddBook = document.getElementById('btn_add');
+var closeAddBook = document.getElementById('close_add')
 
-
-function showSearch() {
-    if (topSearch.style.display == 'block') {
-        topSearch.style.display = 'none'
+function showAdd () {
+    if (addBook.style.display == 'block') {
+      addBook.style.display = 'none'
     } else {
-        topSearch.style.display ='block'
-        btnShowSearch.style.display='none'
+      addBook.style.display = 'block'
     }
 }
 
-btnShowSearch.addEventListener("click", showSearch)
+showAddBook.addEventListener('click', showAdd)
+closeAddBook.addEventListener('click', showAdd)
 
-
+avatarUpload.addEventListener('change', function() {
+    const reader = new FileReader();
+  
+    reader.addEventListener('load', function(){
+      avatarPreview.setAttribute('src', reader.result);
+    });
+  
+    reader.readAsDataURL(this.files[0]);
+  });
+  
+  

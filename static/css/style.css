@@ -556,3 +556,288 @@
     right: 0;
     cursor: pointer;
 }
+
+
+/* ------------option--------------- */
+
+.wrap {
+    display: none;
+}
+
+
+.container-control {
+
+    display: flex;
+  }
+  
+  
+  
+  .select-noon {
+    width: 10%;
+  }
+  
+  .content-option {
+    padding-top: 30px;
+    width: 90%;
+    background-color: rgb(249,219,219);
+    min-height: 100vh;
+  }
+  
+  .products-title  {
+    text-align: center;
+  }
+  
+  .products-title {
+    color: rgb(236, 78, 105);
+    font-size: 30px;
+  }
+  
+  .nav-products {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+  .search-products {
+    padding-left: 10px;
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgb(255, 88, 116) ;
+    background: rgb(255, 214, 221);
+    
+  }
+  
+  .search-products::placeholder {
+    color: rgb(132, 83, 83);
+  }
+  
+  .btn-option {
+    background-color: rgb(247, 72, 139); 
+    color:aliceblue; 
+    border: none; 
+    cursor: pointer;
+  }
+  
+  
+  .list-products {
+    padding: 7px 0px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 152, 170);
+  }
+  
+  .product-item {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  
+  .product-list-info {
+    width: 15%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  
+  }
+  
+  .product-info-title {
+    font-weight: 600;
+    font-size: 15px;
+  
+  }
+  
+  .product-edit {
+    width: 20%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .product-edit-item {
+    width: 40%;
+  }
+  
+  .btn-edit-item {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .product-edit-item:hover{
+    opacity: 0.8;
+  }
+  
+  
+  /* -------------Menu control-------------- */
+  .product-content {
+    display: block;
+  }
+  
+  .users-content {
+    display: none;
+  }
+  
+  
+  .select-option {
+    background-color: rgb(251,230,230);
+    position: fixed;
+    width: 10%;
+    height: 100%;
+  }
+  
+  
+  .menu-control {
+    margin-top: 200px;
+  }
+  
+  .btn_show_control {
+    border: none;
+    width: 100%;
+    height: 50px;
+    background-color: unset;
+    cursor: pointer;
+  
+  }
+  
+  .btn_show_control:hover {
+    background-color: rgb(238,218,218);
+    color: rgb(198,87,148);
+  }
+  
+  .related-tag {
+    padding: 5px;
+    margin-left: 10px;
+    color: var(--text-color);
+    border-radius: 10px;
+    background-color: var(--btn-item-color);
+  }
+
+  
+.btn-option {
+    background-color: rgb(247, 72, 139); 
+    color:aliceblue; 
+    border: none; 
+    cursor: pointer;
+  }
+  
+
+/* ---------------add product------------- */
+
+.add-product {
+    background-color: pink;
+    right: 30%;
+    position: absolute;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: modalFadeIn ease .5s;
+  }
+  .add-content {
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
+  }
+  
+  .form-add{
+    margin: 15px 150px;
+  }
+  
+  .upload-img {
+    margin-top: 30px;
+  }
+  
+  
+  .avatar-wrapper {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    overflow: hidden;
+    border: 1px solid #bbb7b7;
+    border-radius: 10px;
+  }
+  .avatar-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .btn-upload {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .input-avatar {
+    margin-top: 10px;
+    width: 70px;
+    
+  }
+  
+  .update-info {
+    margin-top: 20px;
+  }
+  .form-control-info {
+    padding-left: 10px;
+    border-radius: 5px;
+    width: 250px;
+    height: 20px;
+    border: 1px solid rgb(233, 136, 152);
+    outline: none;
+  }
+  .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    color: red;
+    background-color:transparent;
+  }
+  
+  .btn-add {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 260px;
+    height: 20px;
+    background-color: rgb(250, 87, 114);
+  
+  }
+  
+  
+  /* ---------------modal--------- */
+  .modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+  }
+  
+  
+  @keyframes modalFadeIn {
+    from {
+      transform: translateY(-150px);
+    }
+    to {
+      transform: translateY(0);
+    }
+    
+  }
+  
+  
